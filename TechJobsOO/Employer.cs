@@ -1,19 +1,19 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class Employer
+    public class Employer : JobField
     {
-        public int Id { get; }
-        private static int nextId = 1;
-        public string Value { get; set; }
+        //public int Id { get; }
+        //private static int nextId = 1;
+        //public string Value { get; set; }
 
-        public Employer()
-        {
-            Id = nextId;
-            nextId++;
-        }
+        //public Employer()
+        //{
+        //    Id = nextId;
+        //    nextId++;
+        //}
 
-        public Employer(string value) : this()
+        public Employer(string value) : base(value)
         {
             Value = value;
         }
@@ -29,9 +29,9 @@ namespace TechJobsOO
             return HashCode.Combine(Id);
         }
 
-        public override string ToString()
-        {
-            return Value;
-        }
+        //public override string ToString()
+        //{
+        //    return Value;
+        //}
     }
 }
