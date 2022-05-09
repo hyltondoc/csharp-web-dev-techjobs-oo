@@ -18,8 +18,20 @@ namespace TechJobsOO
         public JobField(string value) : this()
         {
             Value = value;
+        }  
+               
+
+        public override bool Equals(object obj)
+        {
+            return obj is JobField field &&
+                   Id == field.Id &&
+                   Value == field.Value;
         }
- 
+                                  
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Id, Value);
+        }
 
         public override string ToString()
         {

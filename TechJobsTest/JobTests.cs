@@ -82,7 +82,8 @@ namespace TechJobsTest
 
             //Assert.IsFalse(jobTest.Equals(jobTrim));
             //Assert.IsTrue(jobTest.Contains('\n'));
-
+            string jobs1= $"\nId: {jobs.Id}\nName: {jobs.Name}\nEmployer: {jobs.EmployerName.Value}\nLocation: {jobs.EmployerLocation.Value}\nPosition Type: {jobs.JobType.Value}\nCore Competency: {jobs.JobCoreCompetency.Value}\n";
+            Assert.AreEqual(jobs1, jobTest);
         }
     }
 }

@@ -20,16 +20,16 @@ namespace TechJobsOO
             Value = value;
         }
 
-        public override bool Equals(object obj)
-        {
-            return obj is CoreCompetency competency &&
-                   Id == competency.Id;
-        }
+        //public override bool Equals(object obj)
+        //{
+        //    return obj is CoreCompetency competency &&
+        //           Id == competency.Id;
+        //}
 
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(Id);
-        }
+        //public override int GetHashCode()
+        //{
+        //    return HashCode.Combine(Id);
+        //}
 
         //public override string ToString()
         //{
